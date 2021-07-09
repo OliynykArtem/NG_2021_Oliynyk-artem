@@ -12,7 +12,5 @@ int main()
     cout << "Vvedite vtoroe chislo: ";
     cin >> chislo_2;
 
-    chislo_1 += chislo_2;
-
-    cout << "Summa: " << chislo_1;
+    cout << "Summa: " << chislo_1 + chislo_2;
 }
