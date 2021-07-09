@@ -1,9 +1,11 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-    cout << "Artem\nOliynyk";
+    cout << "Artem" << endl;
+    cout << "Oliynyk" << endl;
 }
+
 
