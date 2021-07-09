@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -9,16 +9,16 @@ int main()
     cout << "Vvedi svoyu zarplatu v baksakh: ";
     cin >> zarplata;
 
-    if (zarplata <= 1000000)
+    if (zarplata < 1000001)
     {
         if (zarplata > 1000)
         {
-            cout << "Kruto!\n";
+            cout << "Kruto!" << endl;
         }
 
-        if (zarplata <= 1000)
+        if (zarplata < 1001)
         {
-            cout << "Rabotai bolshe!\n";
+            cout << "Rabotai bolshe!" << endl;
         }
 
         cout << "no ti molodec!";
