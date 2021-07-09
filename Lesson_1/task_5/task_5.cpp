@@ -15,19 +15,21 @@ int main()
     cout << "Vvedite deistvie: ";
     cin >> deistvie;
 
+    cout << "Resultat: ";
+
     switch (deistvie)
     {
     case 1:
-        cout << "Resultat: " << pervoye_chislo + vtoroye_chislo;
+        cout << pervoye_chislo + vtoroye_chislo;
         break;
     case 2:
-        cout << "Resultat: " << pervoye_chislo - vtoroye_chislo;
+        cout << pervoye_chislo - vtoroye_chislo;
         break;
     case 3:
-        cout << "Resultat: " << pervoye_chislo * vtoroye_chislo;
+        cout << pervoye_chislo * vtoroye_chislo;
         break;
     case 4:
-        cout << "Resultat: " << pervoye_chislo / vtoroye_chislo;
+        cout <<pervoye_chislo / vtoroye_chislo;
         break;
     default:
         cout << "nevernoye deystviye!";
