@@ -21,12 +21,11 @@ int main()
             cout << "Rabotai bolshe!" << endl;
         }
 
-        cout << "no ti molodec!";
+        cout << "No ti molodec!";
     }
 
     if (zarplata > 1000000)
     {
-        cout << "Da ti millioner";
+        cout << "Da ti millioner" << endl << "No ti molodec!";
     }
-
 }
