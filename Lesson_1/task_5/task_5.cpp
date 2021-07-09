@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    double pervoye_chislo = 0;
-    double vtoroye_chislo = 0;
-    short deistvie = 0;
+    int pervoye_chislo = 0;
+    int vtoroye_chislo = 0;
+    int deistvie = 0;
 
     cout << "Vvedite pervoe chislo: ";
     cin >> pervoye_chislo;
@@ -17,24 +17,19 @@ int main()
 
     switch (deistvie)
     {
-        case 1:
-            pervoye_chislo += vtoroye_chislo;
-            break;
-        case 2:
-            pervoye_chislo -= vtoroye_chislo;
-            break;
-        case 3:
-            pervoye_chislo *= vtoroye_chislo;
-            break;
-        case 4:
-            pervoye_chislo /= vtoroye_chislo;
-            break;
-        default:
-            cout << "nevernoye deystviye!";
-    }
-
-    if (deistvie > 0 && deistvie < 5)
-    {
-        cout << "Resultat: " << pervoye_chislo;
+    case 1:
+        cout << "Resultat: " << pervoye_chislo + vtoroye_chislo;
+        break;
+    case 2:
+        cout << "Resultat: " << pervoye_chislo - vtoroye_chislo;
+        break;
+    case 3:
+        cout << "Resultat: " << pervoye_chislo * vtoroye_chislo;
+        break;
+    case 4:
+        cout << "Resultat: " << pervoye_chislo / vtoroye_chislo;
+        break;
+    default:
+        cout << "nevernoye deystviye!";
     }
 }
