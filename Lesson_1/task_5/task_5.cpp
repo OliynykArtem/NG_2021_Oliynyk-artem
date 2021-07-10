@@ -19,19 +19,19 @@ int main()
 
     switch (deistvie)
     {
-    case 1:
-        cout << pervoye_chislo + vtoroye_chislo;
-        break;
-    case 2:
-        cout << pervoye_chislo - vtoroye_chislo;
-        break;
-    case 3:
-        cout << pervoye_chislo * vtoroye_chislo;
-        break;
-    case 4:
-        cout <<pervoye_chislo / vtoroye_chislo;
-        break;
-    default:
-        cout << "nevernoye deystviye!";
+        case 1:
+            cout << pervoye_chislo + vtoroye_chislo;
+           break;
+        case 2:
+            cout << pervoye_chislo - vtoroye_chislo;
+           break;
+        case 3:
+            cout << pervoye_chislo * vtoroye_chislo;
+           break;
+        case 4:
+            cout << pervoye_chislo / vtoroye_chislo;
+           break;
+        default:
+            cout << "nevernoye deystviye!";
     }
 }
