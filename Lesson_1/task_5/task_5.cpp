@@ -22,10 +22,7 @@ int main()
     cout << "Vash vibor: ";
     cin >> deistvie;
 
-    if (deistvie > 0 && deistvie < 5)
-    {
-        cout << endl << "Resultat: ";
-    }
+    cout << endl << "Resultat: ";
 
     switch (deistvie)
     {
