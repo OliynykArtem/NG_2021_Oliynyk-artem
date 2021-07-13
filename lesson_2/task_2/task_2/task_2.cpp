@@ -14,7 +14,8 @@ int main()
 
     for (int i = 0; i <= number; i++)
     {
-        cout << i << ", ";
+        cout << i;
+        i < number ? cout << ", " : cout << ".";
     }
 
     cout << endl << endl << "Thanks for using our program :)" << endl << endl;

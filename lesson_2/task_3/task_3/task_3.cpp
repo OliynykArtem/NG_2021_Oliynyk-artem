@@ -14,7 +14,7 @@ int main()
 
     for (int i = 0; i < Square_size; i++)
     {
-        for (int i = 0; i < Square_size; i++)
+        for (int j = 0; j < Square_size; j++)
         {
             cout << "*";
         }
