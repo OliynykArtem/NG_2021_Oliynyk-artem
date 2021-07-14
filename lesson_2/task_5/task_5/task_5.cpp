@@ -13,20 +13,12 @@ int main()
 
 	cout << endl;
 
-	row = size * 2 - 1;
-
-	for (int i = 0; i < size; i++, row -= 2)
+	for (int i = 0; i < size; i++)
 	{
-		for (int j = size - 1; i < j; j--)
+		for (int j = 0; j < size + i; j++)
 		{
-			cout << " ";
+			j < size - i - 1 ? cout << " " : cout << "*";
 		}
-
-		for (int k = size * 2; row  < k; k--)
-		{
-			cout << "*";
-		}
-
 		cout << endl;
 	}
 
