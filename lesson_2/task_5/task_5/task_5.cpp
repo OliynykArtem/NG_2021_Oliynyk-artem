@@ -5,7 +5,6 @@ using namespace std;
 int main()
 {
 	int size = 0;
-	int row = 0;
 
 	cout << "Welcome!" << endl;
 	cout << "Christmas tree size: ";
