@@ -14,14 +14,18 @@ int main()
 
 	for (int i = 0; i < size; i++)
 	{
-		for (int j = 0; j < size + i; j++)
+		for (int j = size; j > i; j--)
 		{
-			j < size - i - 1 ? cout << " " : cout << "*";
+			cout << " ";
+		}
+		for (int k = 0; k <= i * 2; k++)
+		{
+			cout << "*";
 		}
 		cout << endl;
 	}
 
-	for (int i = 0; i < size - 1; i++)
+	for (int i = 0; i < size; i++)
 	{
 		cout << " ";
 	}
