@@ -24,13 +24,14 @@ int main()
 		if (our_school == school_numbers[i])
 		{
 			message = "I know this school";
-			break;
-		}
-		else
-		{
-			message = "I don't know this school";
 		}
 	}
+
+	if (message != "I know this school")
+	{
+		message = "I don't know this school";
+	}
+
 	cout << endl << message << endl;
 
 	cout << endl << endl << "Thanks for using our program :)" << endl << endl;
