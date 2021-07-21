@@ -7,6 +7,7 @@ int main()
 	int cards[10];
 	int card_number = 0;
 	int amount_money = 0;
+	int sum = 0;
 
 	cout << "Welcome" << endl << endl;
 
@@ -25,13 +26,13 @@ int main()
 		cin >> amount_money;
 
 		cards[card_number - 1] += amount_money;
+		sum += amount_money;
 
 		for (int i = 0; i < 10; i++)
 		{
 			cout << cards[i] << " ";
 		}
 		 
-		cout << endl << "Summa: " << cards[card_number - 1] << endl << endl;
-
+		cout << endl << "Summa: " << sum << endl << endl;
 	}
 }
