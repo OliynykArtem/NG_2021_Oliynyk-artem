@@ -30,7 +30,7 @@ int main()
 		{
 			cout << cards[i] << " ";
 		}
-
+		 
 		cout << endl << "Summa: " << cards[card_number - 1] << endl << endl;
 
 	}
