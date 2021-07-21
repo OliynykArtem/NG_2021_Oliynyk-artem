@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-
+ 
 using namespace std;
 
 int main()
@@ -9,7 +9,7 @@ int main()
 
 	int school_numbers[10];
 	int our_school = 0;
-	string message;
+	bool know = false;
 	for (int i = 0; i < 10; i++)
 	{
 		cout << i + 1 << ".school Number: ";
@@ -23,16 +23,18 @@ int main()
 	{
 		if (our_school == school_numbers[i])
 		{
-			message = "I know this school";
+			know = true;
 		}
 	}
 
-	if (message != "I know this school")
+	if (know == true)
 	{
-		message = "I don't know this school";
+		cout << endl << "i know this school";
 	}
-
-	cout << endl << message << endl;
+	else
+	{
+		cout << endl << "i don't know this school";
+	}
 
 	cout << endl << endl << "Thanks for using our program :)" << endl << endl;
 }
