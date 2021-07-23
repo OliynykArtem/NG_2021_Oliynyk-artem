@@ -6,6 +6,7 @@ int main()
 {
 	int values[20];
 	int max = 0;
+	int numbers = 0;
 
 	cout << "Welcome!" << endl << endl;
 	cout << "Enter 20 values" << endl;
@@ -16,6 +17,9 @@ int main()
 	{
 		cout << i + 1 << " - ";
 		cin >> values[i];
+
+		numbers++;
+		
 		if (values[i] == 0)
 		{
 			break;
@@ -24,13 +28,15 @@ int main()
 
 	max = values[0];
 
-	for (int i = 1; i < 20; i++)
+	for (int i = 0; i < numbers; i++)
 	{
 		if (max < values[i])
 		{
 			max = values[i];
 		}
 	}
+
+	cout << endl;
 
 	for (int i = 0; values[i] != 0 && i < 20; i++)
 	{
