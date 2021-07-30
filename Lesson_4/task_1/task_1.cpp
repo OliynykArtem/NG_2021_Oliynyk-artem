@@ -14,7 +14,7 @@ int main()
 
 	for (int i = 0; arr[i] != 0; i++)
 	{
-		if (!((arr[i] >= 65 && arr[i] <= 90) || (arr[i] >= 97 && arr[i] <= 122)))
+		if (!((arr[i] >= 'A' && arr[i] <= 'Z') || (arr[i] >= 'a' && arr[i] <= 'z')))
 		{
 			arr[i] = 0;
 		}
