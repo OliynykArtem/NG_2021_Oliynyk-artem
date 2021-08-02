@@ -6,14 +6,14 @@ int main()
 {
 	char inj_arr[1000];
 
-	// Сообщение пользователю
+	// Message
 	cout << "Welcome!" << endl;
 	cout << "Please enter any line: ";
 	cin.getline(inj_arr, 1000);
 
 	cout << endl;
 
-	// Переводим буквы из нижнего регистра в верхний
+	// Converting letters from lower to upper case
 	for (int i = 0; inj_arr[i] != 0; i++)
 	{
 		if ((inj_arr[i] >= 'a' && inj_arr[i] <= 'z'))
@@ -23,6 +23,6 @@ int main()
 		cout << inj_arr[i];
 	}
 
-	// Сообщение пользователю
+	// Message
 	cout << endl << endl << "Thanks for using our program :)" << endl << endl;
 }

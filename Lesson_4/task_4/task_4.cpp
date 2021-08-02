@@ -10,18 +10,18 @@ int main()
 	int size = 0;
 	int symbol = 0;
 
-	// Сообщение пользователю
+	// Message
 	cout << "Welcome!" << endl;
 	cout << "Please enter any line: ";
 	cin.getline(inj_arr, 1000);
 
-	// Присваеваем каждому елементу массива значение 0
+	// Each element of the array is assigned the value 0
 	for (int i = 0; i < 26; i++)
 	{
 		alphabet[i] = 0;
 	}
 
-	// Считаем количество каждой буквы в введённой пользователем строке
+	// We count the number of each letter in the line entered by the user
 	for (int i = 0; inj_arr[i] != 0; i++)
 	{
 		if ((inj_arr[i] >= 'A' && inj_arr[i] <= 'Z'))
@@ -37,7 +37,7 @@ int main()
 		}
 	}
 
-	// Сортируем и выводим количество букв
+	// Sorting and displaying the number of letters
 	for (int i = 0; i < 26; i++)
 	{
 		int max = 0;
@@ -60,6 +60,6 @@ int main()
 		}
 	}
 
-	// Сообщение пользователю
+	// Message
 	cout << endl << endl << "Thanks for using our program :)" << endl << endl;
 }
