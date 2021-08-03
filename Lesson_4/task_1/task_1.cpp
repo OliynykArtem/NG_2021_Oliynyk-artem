@@ -6,7 +6,6 @@ int main()
 {
 	char arr[1000];
 	int words = 0;
-	int size = 0;
 
 	cout << "Welcome!" << endl;
 	cout << "Please enter any line: ";
@@ -14,16 +13,8 @@ int main()
 
 	for (int i = 0; arr[i] != 0; i++)
 	{
-		if (!((arr[i] >= 'A' && arr[i] <= 'Z') || (arr[i] >= 'a' && arr[i] <= 'z')))
-		{
-			arr[i] = 0;
-		}
-		size++;
-	}
-
-	for (int i = 0; i < size; i++)
-	{
-		if (arr[i] != 0 && arr[i + 1] == 0)
+		if (((arr[i] >= 'A' && arr[i] <= 'Z') || (arr[i] >= 'a' && arr[i] <= 'z')) && 
+		  (!((arr[i + 1] >= 'A' && arr[i + 1] <= 'Z') || (arr[i + 1] >= 'a' && arr[i + 1] <= 'z'))))
 		{
 			words++;
 		}
