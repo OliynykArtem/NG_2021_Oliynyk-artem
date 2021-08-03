@@ -7,8 +7,6 @@ using namespace std;
 int main()
 {
 	char inj_arr[1000];
-	int word_len[50];
-	int firsts_symbols[50];
 	int words = 0;
 	int size = 0;
 	int max = 0;
@@ -18,30 +16,19 @@ int main()
 	cout << "Welcome!" << endl;
 	cout << "Please enter any line: ";
 	cin.getline(inj_arr, 1000);
-
-	// Присваеваем каждому елементу массива значение 0
-	for (int i = 0; i < 50; i++)
-	{
-		word_len[i] = 0;
-	}
 	
-	// Ненужные символы, введенной пользователем строки меняем на 0 
+
 	for (int i = 0; inj_arr[i] != 0; i++)
 	{
-		if (!((inj_arr[i] >= 'A' && inj_arr[i] <= 'Z') || (inj_arr[i] >= 'a' && inj_arr[i] <= 'z')))
+		if (((inj_arr[i] >= 'A' && inj_arr[i] <= 'Z') || (inj_arr[i] >= 'a' && inj_arr[i] <= 'z')))
 		{
-			inj_arr[i] = 0;
-		}
-		size++;
-	}
+			if (!((inj_arr[i + 1] >= 'A' && inj_arr[i + 1] <= 'Z') || (inj_arr[i + 1] >= 'a' && inj_arr[i + 1] <= 'z')))
+			{
+				words++;
+			}
 
-	// Считаем количество слов
-	for (int i = 0; i < size; i++)
-	{
-		if (inj_arr[i] != 0 && inj_arr[i + 1] == 0)
-		{
-			words++;
 		}
+
 	}
 
 	// Считаем сколько символов в каждом слове
