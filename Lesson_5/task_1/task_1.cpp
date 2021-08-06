@@ -12,15 +12,21 @@ int set_size()
 	return size;
 }
 
-int tree_output(int size)
+void tree_output_1(int size, int i = 0)
+{
+	for (int j = size; j > i; j--)
+	{
+		cout << " ";
+	}
+}
+
+int tree_output_2(int size)
 {
 	cout << endl;
 	for (int i = 0; i < size; i++)
 	{
-		for (int j = size; j > i; j--)
-		{
-			cout << " ";
-		}
+		tree_output_1(size, i);
+
 		for (int k = 0; k <= i * 2; k++)
 		{
 			cout << "*";
@@ -32,16 +38,15 @@ int tree_output(int size)
 
 void tree_trunk_output(int size)
 {
-	for (int i = 0; i < size; i++)
-	{
-		cout << " ";
-	}
+	tree_output_1(size);
 
 	cout << "*";
 }
 
+
+
 int main()
 {
-	tree_trunk_output(tree_output(set_size()));
+	tree_trunk_output(tree_output_2(set_size()));
 	cout << endl << endl << "Thanks for using our program :)" << endl << endl;
 }
