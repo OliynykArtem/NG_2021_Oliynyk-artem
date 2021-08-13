@@ -5,7 +5,6 @@ using namespace std;
 int main()
 {
 	char inj_arr[1000];
-	int words = 0;
 	int size = 0;
 	int max = 0;
 	int first_symbol = 0;
@@ -42,6 +41,9 @@ int main()
 			j = 0;
 		}
 	}
+
+	cout << max_first_symbol << endl;
+	cout << max << endl;
 
 	for (int i = max_first_symbol; i < max_first_symbol + max; i++)
 	{
