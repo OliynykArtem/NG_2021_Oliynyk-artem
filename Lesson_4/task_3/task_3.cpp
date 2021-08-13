@@ -17,8 +17,7 @@ int main()
 	{
 		if ((inj_arr[i] >= 'a' && inj_arr[i] <= 'z'))
 		{
-			char character_output = inj_arr[i] - 32;
-			cout << character_output;
+			cout << (char)(inj_arr[i] - 32);
 		}
 		else
 		{
