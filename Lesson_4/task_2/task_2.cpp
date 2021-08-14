@@ -13,22 +13,15 @@ int main()
 	// Message
 	cout << "Welcome!" << endl;
 	cout << "Please enter any line: ";
-	cin.getline(inj_arr, 1000);
+	cin.getline(inj_arr, sizeof(inj_arr));
 	
-	int j = 0;
-	for (int i = 0; inj_arr[i - 1] != 0; i++)
+	int i = 0;
+	while (inj_arr[i] != 0)
 	{
 		if (((inj_arr[i] >= 'A' && inj_arr[i] <= 'Z') || 
 			(inj_arr[i] >= 'a' && inj_arr[i] <= 'z')))
 		{
 			size++;
-
-			if (j == 0)
-			{
-				first_symbol = i;
-				j = 1;
-			}
-			
 		}
 		else
 		{
@@ -37,19 +30,16 @@ int main()
 				max_first_symbol = first_symbol;
 				max = size;
 			}
+			first_symbol = i;
 			size = 0;
-			j = 0;
 		}
+		i++;
 	}
-
-	cout << max_first_symbol << endl;
-	cout << max << endl;
 
 	for (int i = max_first_symbol; i < max_first_symbol + max; i++)
 	{
 		cout << inj_arr[i];
 	}
-
 
 	// Message
 	cout << endl << endl << "Thanks for using our program :)" << endl << endl;
