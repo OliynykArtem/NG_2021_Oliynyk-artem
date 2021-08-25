@@ -16,7 +16,7 @@ int main()
 	cin.getline(inj_arr, sizeof(inj_arr));
 
 	int i = 0;
-	while (inj_arr[i] != 0 || inj_arr[i - 1] != 0)
+	while (inj_arr[i] != 0)
 	{
 		if (((inj_arr[i] >= 'A' && inj_arr[i] <= 'Z') ||
 			(inj_arr[i] >= 'a' && inj_arr[i] <= 'z')))
